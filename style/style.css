@@ -105,6 +105,7 @@ nav{
 
 .menu{
     display: none;
+    cursor: pointer;
 }
 
 .menu>i{
@@ -125,6 +126,17 @@ nav{
 
 .closeIcon{
     display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cartAfter::after{
+    content: "0";
+    color: #e02c6d;
+    font-size: 18px;
+    position: relative;
+    top: -16px;
+    left: -10px;
 }
 
 
@@ -152,10 +164,13 @@ nav{
         right: 0;
         top: 0;
         display: none;
-        transition: all 5s;
+        transition: all .3s;
     }
     .navLinks>li>a{
         color: white;
+    }
+    .navLinks>li>a:hover{
+        color: rgb(36, 9, 245);
     }
     .navLinks>li>a>i{
         display: none;
