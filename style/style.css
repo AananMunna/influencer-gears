@@ -128,7 +128,6 @@ nav{
 .closeIcon{
     display: none;
     cursor: pointer;
-    z-index: 1;
 }
 
 .cartAfter::after{
@@ -166,6 +165,7 @@ nav{
         top: 0;
         display: none;
         transition: all .3s;
+        z-index: 1;
     }
     .navLinks>li>a{
         color: white;
