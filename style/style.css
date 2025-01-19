@@ -108,7 +108,7 @@ nav{
 }
 
 .menu>i{
-    font-size: 25px;
+    font-size: 30px;
     color: #1B1B1B;
     font-weight: bold;
 }
@@ -118,7 +118,7 @@ nav{
 }
 
 .cart>li>a>i{
-    font-size: 24px;
+    font-size: 27px;
     color: #1B1B1B;
     font-weight: bold;
 }
@@ -136,6 +136,6 @@ nav{
         display: none;
     }
     .log>a{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
