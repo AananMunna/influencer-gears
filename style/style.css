@@ -238,3 +238,27 @@ nav{
         line-height: 40px;
     }
 }
+
+/* brands section styles */
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #f4f6f8;
+    border-bottom: 2px solid #f4f6f8;
+    margin: 80px 0;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .brands{
+        justify-content: center;
+        border: none;
+    }
+
+    .brands>img{
+        width: auto;
+    }
+}
