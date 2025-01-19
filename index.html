@@ -11,13 +11,13 @@
     <header>
         <nav class="container">
             <div class="menu">
-                <i class="bi bi-list"></i>
+                <i onclick="menu()" class="bi bi-list"></i>
             </div>
             <div class="logo">
                 <a href="#">Influencer products</a>
             </div>
-            <div class="navLinks">
-                <ul>
+                <ul class="navLinks" id="navLinks">
+                    <i class="bi bi-x-lg closeIcon" onclick="closeIcon()"></i>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Sign up</a></li>
@@ -25,7 +25,6 @@
                     <li><a href="#"><i class="bi bi-search"></i></a></li>
                     <li><a href="#"><i class="bi bi-cart3"></i></a></li>
                 </ul>
-            </div>
             <div class="cart">
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
             </div>
@@ -33,5 +32,10 @@
     </header>
     <main></main>
     <footer></footer>
+
+
+
+
+    <script src="./script/script.js"></script>
 </body>
 </html>

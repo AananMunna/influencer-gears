@@ -82,24 +82,24 @@ nav{
     color: #3A3A3A;
 }
 
-.navLinks>ul{
+.navLinks{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
 }
 
-.navLinks>ul>li>a{
+.navLinks>li>a{
     font-size: 16px;
     font-weight: 600;
     color: #3A3A3A;
     transition: all .5s;
 }
-.navLinks>ul>li>a>i{
+.navLinks>li>a>i{
     font-size: 20px;
 }
 
-.navLinks>ul>li>a:hover{
+.navLinks>li>a:hover{
     color: #e02c6d ;
 }
 
@@ -123,16 +123,41 @@ nav{
     font-weight: bold;
 }
 
+.closeIcon{
+    display: none;
+}
 
 
 @media (max-width: 768px) {
     .menu{
         display: block;
     }
+    .closeIcon{
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 32px;
+        top: 10px;
+        right: 15px;
+    }
     .cart{
         display: block;
     }
     .navLinks{
+        background: #e02c6d;
+        flex-direction: column;
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+        transition: all 5s;
+    }
+    .navLinks>li>a{
+        color: white;
+    }
+    .navLinks>li>a>i{
         display: none;
     }
     .log>a{
