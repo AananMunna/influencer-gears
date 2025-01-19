@@ -281,9 +281,24 @@ nav{
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-
+}
+.cardSections button{
+    background: #fff;
+    color: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
+.alignBtn{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
 
 .card{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -333,4 +348,93 @@ nav{
     color: #787885;
     margin-top: 5px;
     font-family: "Inter", serif;
+}
+
+/* featured section styles */
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.featuredRight>h3{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #0A0826;
+}
+
+.featuredRight>p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.featuredRight>button{
+    background: #E02C6D;
+    color: #fff;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.featured img{
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+}
+@media (max-width: 768px) {
+    .featuredRight>h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+/* footer style  */
+footer{
+    background: #0a0826;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    padding: 50px 0;
+}
+.footer>h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer span, p{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Manrope", serif;
+    color: #D9DBE1;
+}
+.footerIcons{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.footerIcons>i{
+    background: #22213c;
+    padding: 6px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all .5s;
+}
+.footerIcons>i:hover{
+    background: #E02C6D;
 }
